@@ -5,6 +5,7 @@ import x from '@/styles/app.module.css'
 import y from '@/styles/dungdz.module.css'
 
 import useSWR from "swr";
+import AppTable from '@/components/app.table';
 
 
 
@@ -21,7 +22,7 @@ const { data, error, isLoading } = useSWR(
 );
 
 if (error) return "An error has occurred.";
-if (isLoading) return "Loading...";
+if (!data) return "Loading...";
 
   return (
    <div>
@@ -34,6 +35,9 @@ if (isLoading) return "Loading...";
       <li> <Link href="/admin">Admin</Link></li>
 
     </ul>
+    <AppTable
+    blogs={data}
+    />
    </div>
   )
 }
