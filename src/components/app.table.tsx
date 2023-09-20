@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import CreateModal from './create.modal';
 import { useState } from 'react';
+
 interface IProps {
     blogs:IBlog[]
 }

@@ -26,17 +26,9 @@ if (!data) return "Loading...";
 
   return (
    <div>
-    {data?.lenght}
-    <ul>
-      <li className={x['red']}> <Link href="/facebook"> 
-    <span className={y['red']}>Facebook</span>  
-      </Link></li>
-      <li> <Link href="/tiktok">Tiktok</Link></li>
-      <li> <Link href="/admin">Admin</Link></li>
-
-    </ul>
+    
     <AppTable
-    blogs={data}
+    blogs={data?.sort((a:any, b:any)=> b.id -a.id)}
     />
    </div>
   )
