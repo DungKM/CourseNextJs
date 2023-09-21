@@ -15,13 +15,10 @@ function AppHeader() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link className="nav-link" href={"/facebook"}>
-              Facebook
+            <Link className="nav-link" href={"/blogs"}>
+              Blogs
             </Link>
-            <Link className="nav-link" href={"/tiktok"}>
-              Tiktok
-            </Link>
-            <Link className="nav-link" href={"/admin"}></Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
